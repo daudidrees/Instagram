@@ -8,14 +8,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="styles/custom-slider.css">
   <title>Tailwind</title>
 </head>
-<body>
-  <div class="relative bg-[#e5e7eb]">
-    <div class="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
-      <div class="pr-16 sm:px-16 sm:text-center">
-        <p class="font-medium text-black">
-          <span class="text-[60px]">INSTAGRAM LOGO</span>
+<body class="bg-[#e5e7eb]">
+  <div class="relative">
+    <div class="mx-auto max-w-7xl py-5 lg:py-12 px-3 sm:py-6">
+      <div class="text-center">
+        <p class="font-bold text-black">
+          <span class="xl:text-[60px] lg:text-[40px] md:text-[30px] text-[20px]">INSTAGRAM LOGO</span>
         </p>
       </div>
     </div>
@@ -23,28 +27,29 @@
 
 
 
-  <nav class="bg-[#FC4F1E] border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
-    <div class="container flex flex-wrap items-center justify-center mx-auto">
-      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
-        <ul class="flex flex-col p-4 mt-4 border  rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-          <li>
-            <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 dark:text-white" aria-current="page">HOME</a>
+  <nav class="bg-[#FC4F1E] py-5 md:py-0">
+    <div class="flex flex-wrap items-center justify-center mx-auto">
+      <div class="items-center justify-between w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
+        <ul class="hidden md:flex items-center flex-col md:py-4  lg:py-8 rounded-lg text-white md:flex-row xl:space-x-20 lg:md:space-x-12 md:md:space-x-6  xl:text-[25px] lg:text-[20px] md:text-[18px]">
+          <li class="relative">
+            <a href="#" class="block pl-3 pr-4 rounded md:bg-transparent py-2 pb-3 md:p-0 after:absolute after:content after:w-full after:h-1 after:left-0 after:-bottom-2 after:bg-white" aria-current="page">HOME</a>
           </li>
           <li>
-            <a href="./blog.html" class="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">BLOGS</a>
+            <a href="./blog.html" class="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">BLOGS</a>
           </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ABOUT US</a>
+            <a href="./blog.html" class="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">ABOUT US</a>
           </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">TOOLS</a>
+            <a href="./blog.html" class="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">TOOLS</a>
           </li>
           <li>
-            <a href="#" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">CONTACT US</a>
+            <a href="./blog.html" class="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0">CONTACT US</a>
           </li>
-          <li class="ml-36">
-            <button type="submit" class="p-1 focus:outline-none focus:shadow-outline">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          <li class="text-black relative navSearchWrapper">
+            <input type="text" class="h-auto m-0 py-2 px-4 focus:outline-none text-[18px] outline-none border-none rounded-full opacity-0">
+            <button type="submit">
+              <img src="./assets/imgs/Group 185.png" alt="search-icon" class=" absolute right-[20px] top-[5px] rounded-full z-10 p-2 navSearch bg-white">
             </button>
           </li>
         </ul>
@@ -52,136 +57,136 @@
     </div>
   </nav>
 
-<div class="relative flex justify-center items-center bg-gray-300">
+  <div class="relative flex justify-center items-center max-h-[740px] 2xl:min-h-[740px] xl:min-h-[550px] min-h-[480px]">
+    <div class="absolute top-0 left-0 right-0 bottom-0 z-10 after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-40 ">
+      <img src="./assets/imgs/Rectangle.png" alt="header-backgroud" class="max-h-full inline-block w-full h-full object-cover z-0 ">
+    </div>
 
-  <div class="relative flex justify-center items-center flex-col min-h-[700px] text-white">
-    <div class="max-w-[1190px] text-center ">
-      <div class="mb-16 text-center">
+    <div class="max-w-[800px] text-center relative z-50 text-white">
+      <div class="mb-8 lg:mb-10 2xl:mb-14 text-center">
         <img class="mx-auto" src="./assets/imgs/art1-04.png" alt="image">
       </div>
-      <h1 class="font-bold text-[60px]">instagram Profile
+      <h1 class="font-bold text-[24px] md:text-[30px] lg:text-[40px] 2xl:text-[60px]">instagram Profile
         Downloader</h1>
     </div>
-  </div>
 
-  <div class="absolute bottom-5 w-full px-28">
-    <div class="flex items-center justify-between">
-          <div class="relative w-full">
-            <input type="search" id="search" class="min-w-full p-4 pl-12 py-6 text-[25px] rounded-2xl outline-none" value="http:/instagram.com/v/WDXERECCRHYHYHBF" required>
+  <div class="absolute lg:bottom-5 bottom-0 w-full px-4 2xl:px-40 md:px-12 z-30">
+    <div class="flex items-center justify-between lg:flex-row flex-col">
+          <div class="relative w-full lg:mb-0 mb-3 md:mb-4">
+            <input type="search" id="search" class="min-w-full w-full p-4 2xl:pl-24 xl:pl-20 md:pl-16 pl-8 xl:py-6 lg:py-4 md:text-[25px] text-[9px] md:rounded-2xl rounded-xl outline-none" value="http:/instagram.com/v/WDXERECCRHYHYHBF" required>
 
-            <div class="absolute inset-y-0 left-1 flex items-center pl-3 pointer-events-none">
-              <img class="w-5 h-5" src="./assets/imgs/Icon feather-link.png" alt="feature">
+            <div class="absolute inset-y-0 left- flex items-center 2xl:pl-14 xl:pl-10 lg:pl-8 pl-4 pointer-events-none">
+              <img class="md:w-5 md:h-5 w-3 h-3" src="./assets/imgs/Icon feather-link.png" alt="feature">
             </div>
 
-            <button class="absolute right-2.5 bottom-2.5 inline-flex items-center py-5 px-5 font-medium text-center text-white bg-[#3481F0] rounded-2xl text-[18px] focus:outline-none shadow-md shadow-[#3481F0]" type="button">
+            <button class="absolute right-2.5 2xl:bottom-2.5 xl:bottom-3 lg:bottom-[10px] md:bottom-3 bottom-[6px] inline-flex items-center xl:py-4 py-3 2xl:px-12 xl:px-8 px-4 font-medium text-center text-white bg-[#3481F0] md:rounded-2xl rounded-lg 2xl:text-[25px]
+            lg:text-[20px] text-[8px] focus:outline-none shadow-md shadow-[#3481F0]" type="button">
               <span>
-                <img class="w-[20px] h-[20px] mr-3" src="./assets/imgs/icon-btn.png" alt="person">
+                <img class="w-3 h-3 mr-2 md:w-[20px] md:h-[20px] md:mr-5" src="./assets/imgs/icon-btn.png" alt="person">
               </span>
               Instagram Profile
-              <svg class="ml-2 w-5 h-5" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+              <svg class="md:ml-5 md:w-5 md:h-5 ml-2 w-3 h-3" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
           </div>
-          <div class="ml-8">
-            <button class="bg-[#FC4F1E] text-white py-6 px-16 font-medium text-[28px] rounded-xl ">Download</button>
+          <div class="2xl:ml-11 lg:ml-8 lg:inline-block block lg:w-auto w-full">
+            <button class="bg-[#FC4F1E] lg:w-auto w-full text-white py-3 md:py-4 xl:py-6 2xl:px-16 xl:px-12 lg:px-8 font-medium 2xl:text-[28px] xl:text-[24px] lg:text-[20px] rounded-xl ">Download</button>
           </div>
     </div>
   </div>
 </div>
 
-  <div class="max-w-[1511px] m-auto py-14">
-    <p class="text-[24px] text-[#707070] text-center">If you want to download a video choose the video icon above before pasting the link, the same goes for the reel, story, and profile picture.</p>
-  </div>
+<div class="max-w-[1511px] m-auto py-4 md:py-8 lg:py-14 px-6">
+  <p class="text-[10px] md:text-[20px] lg:text-[24px] text-[#707070] text-center">If you want to download a video choose the video icon above before pasting the link, the same goes for the reel, story, and profile picture.</p>
+</div>
 
 
-  <div class="w-full max-w-screen-2xl mx-auto flex justify-between items-center text-[#FC4F1E] bg-white">
-    <button class="inline-flex items-center py-6 px-20 text-[25px] font-medium" type="button">
+  <div class="w-full max-w-screen-2xl mx-auto flex justify-between items-center flex-wrap text-[#FC4F1E] bg-white">
+    <button class="w-1/2 md:w-1/4 inline-flex items-center justify-center text-[12px] lg:text-[18px] 2xl:text-[24px] font-medium py-4 lg:py-6 px-4  md:px-6 lg:px-8 xl:px-10 2xl:px-20" type="button">
       <span>
-        <img class="w-[25px] h-[25px] mr-3 object-contain" src="./assets/imgs/Mask Group 1.png" alt="person">
+        <img class="w-[23px] h-[23px] mr-3 object-contain" src="./assets/imgs/Mask Group 1.png" alt="person">
       </span>
       Instagram IGTV
     </button>
-    <button class="inline-flex items-center py-6 px-20 text-[25px] font-medium" type="button">
+    <button class="w-1/2 md:w-1/4 inline-flex items-center justify-center text-[12px] lg:text-[18px] 2xl:text-[24px] font-medium py-4 lg:py-6 px-4  md:px-6 lg:px-8 xl:px-10 2xl:px-20" type="button">
       <span>
-        <img class="w-[25px] h-[25px] mr-3 object-contain" src="./assets/imgs/instagram-reels-icon.png" alt="person">
+        <img class="w-[23px] h-[23px] mr-3 object-contain" src="./assets/imgs/instagram-reels-icon.png" alt="person">
       </span>
       Instagram Reels
     </button>
-    <button class="bg-[#F6F6F6] inline-flex items-center py-6 px-20 text-[25px] font-medium" type="button">
+    <button class="w-1/2 md:w-1/4 bg-[#F6F6F6] inline-flex items-center justify-center text-[12px] lg:text-[18px] 2xl:text-[24px] font-medium py-4 lg:py-6 px-4  md:px-6 lg:px-8 xl:px-10 2xl:px-20" type="button">
       <span>
-        <img class="w-[25px] h-[25px] object-contain mr-3" src="./assets/imgs/Group 270.png" alt="person">
+        <img class="w-[23px] h-[23px] object-contain mr-3" src="./assets/imgs/Group 270.png" alt="person">
       </span>
       Instagram Story
     </button>
-    <button class="inline-flex items-center py-6 px-20 text-[25px] font-medium" type="button">
+    <button class="w-1/2 md:w-1/4 inline-flex items-center justify-center text-[12px] lg:text-[18px] 2xl:text-[24px] font-medium py-4 lg:py-6 px-4  md:px-6 lg:px-8 xl:px-10 2xl:px-20" type="button">
       <span>
-        <img class="w-[25px] h-[25px] mr-3 object-contain" src="./assets/imgs/Icon feather-play-circle.png" alt="person">
+        <img class="w-[23px] h-[23px] mr-3 object-contain" src="./assets/imgs/Icon feather-play-circle.png" alt="person">
       </span>
       Instagram Video
     </button>
   </div>
 
-  <div class="flex gap-6 mt-32  max-w-screen-2xl mx-auto justify-start">
-    <div class="w-1/4">
+  <div class="flex flex-col lg:flex-row gap-6 mt-10 md:mt-14 lg:mt-20 xl:mt-32 max-w-screen-2xl mx-auto justify-start px-24  lg:px-6">
+    <div class="w-1/1 lg:w-1/4">
       <div class="text-center">
         <p class="text-[18px] mb-4">Instagram Profile</p>
-        <div class="mb-4">
+        <div class="mb-2 lg:mb-4">
           <img class="text-center mx-auto rounded-full" src="./assets//imgs/Ellipse 15.png" alt="Ellipse">
         </div>
         <div class="flex items-center justify-center text-[#FC4F1E] mb-3">
           <img src="./assets/imgs/Group 238.png" alt="icon">
-          <span class="text-[30px] font-medium ml-3">Arjun Das</span>
+          <span class="text-[20px] lg:text-[30px] font-medium ml-3">Arjun Das</span>
         </div>
-        <p class="text-[50px] font-medium">534</p>
-        <p class="text-[20px] font-medium">Followers</p>
+        <p class="text-[20px] lg:text-[30px] xl:text-[50px] font-medium">534</p>
+        <p class="text-[16px] lg:text-[20px] font-medium">Followers</p>
       </div>
     </div>
 
     <div class="w-1/1">
-
       <div class="lg:flex rounded mx-auto gap-7 mb-16">
-
-        <div class="w-full h-full rounded relative overflow-hidden shadow-lg">
+        <div class="w-full h-full rounded relative overflow-hidden shadow-lg mb-8 lg:mb-0">
           <img class="w-full" src="./assets/imgs/Component 5 – 1.png" alt="Sunset in the mountains">
-          <button class="w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-6 px-16 font-medium text-[28px] rounded-xl ">
+          <button class="w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-3 lg:py-4 2xl:py-6 font-medium text-[16px] lg:text-[20px] xl:text-[28px] rounded-xl ">
             Download
           </button>
         </div>
 
-        <div class="w-full h-full rounded relative overflow-hidden shadow-lg">
+        <div class="w-full h-full rounded relative overflow-hidden shadow-lg mb-8 lg:mb-0">
           <img class="w-full" src="./assets/imgs/Component 5 – 1.png" alt="Sunset in the mountains">
-          <button class="w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-6 px-16 font-medium text-[28px] rounded-xl ">
+          <button class="w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-3 lg:py-4 2xl:py-6 font-medium text-[16px] lg:text-[20px] xl:text-[28px] rounded-xl ">
             Download
           </button>
         </div>
 
-        <div class="w-full h-full rounded relative overflow-hidden shadow-lg">
+        <div class="w-full h-full rounded relative overflow-hidden shadow-lg mb-8 lg:mb-0">
           <img class="w-full" src="./assets/imgs/Component 5 – 1.png" alt="Sunset in the mountains">
-          <button class="w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-6 px-16 font-medium text-[28px] rounded-xl ">
+          <button class="w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-3 lg:py-4 2xl:py-6 font-medium text-[16px] lg:text-[20px] xl:text-[28px] rounded-xl ">
             Download
           </button>
         </div>
-
       </div>
 
       <div class="lg:flex rounded mx-auto gap-7">
 
-        <div class="w-full h-full rounded relative overflow-hidden shadow-lg">
+        <div class="w-full h-full rounded relative overflow-hidden shadow-lg mb-8 lg:mb-0">
           <img class="w-full" src="./assets/imgs/Component 5 – 1.png" alt="Sunset in the mountains">
-          <button class="w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-6 px-16 font-medium text-[28px] rounded-xl ">
+          <button class="w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-3 lg:py-4 2xl:py-6 font-medium text-[16px] lg:text-[20px] xl:text-[28px] rounded-xl ">
+            Download
+          </button>
+        </div>
+
+        <div class="w-full h-full rounded relative overflow-hidden shadow-lg mb-8 lg:mb-0">
+          <img class="w-full" src="./assets/imgs/Component 5 – 1.png" alt="Sunset in the mountains">
+          <button class="w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-3 lg:py-4 2xl:py-6 font-medium text-[16px] lg:text-[20px] xl:text-[28px] rounded-xl ">
             Download
           </button>
         </div>
 
         <div class="w-full h-full rounded relative overflow-hidden shadow-lg">
           <img class="w-full" src="./assets/imgs/Component 5 – 1.png" alt="Sunset in the mountains">
-          <button class="w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-6 px-16 font-medium text-[28px] rounded-xl ">
-            Download
-          </button>
-        </div>
-
-        <div class="w-full h-full rounded relative overflow-hidden shadow-lg">
-          <img class="w-full" src="./assets/imgs/Component 5 – 1.png" alt="Sunset in the mountains">
-          <button class="w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-6 px-16 font-medium text-[28px] rounded-xl ">
+          <button class="w-full absolute bottom-0 bg-[#FC4F1E] text-center text-white py-3 lg:py-4 2xl:py-6 font-medium text-[16px] lg:text-[20px] xl:text-[28px] rounded-xl ">
             Download
           </button>
         </div>
@@ -193,35 +198,36 @@
 
 
   <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap items-center justify-between">
-      <div class="flex flex-wrap -mx-4 mt-auto mb-auto w-1/2 content-start">
-        <div class="w-full sm:p-4 px-4 mb-6">
-          <h1 class="title-font text-[40px] font-bold mb-14 text-gray-900">HOW TO DOWNLOAD INSTAGRAM
+    <div class="lg:container px-5 py-14 md:py-20 lg:py-24 mx-auto flex flex-wrap items-center justify-between lg:flex-row flex-col">
+      <div class="flex flex-wrap -mx-4 mt-auto text-center lg:text-left mb-auto lg:w-1/2 content-start">
+        <div class="w-full sm:p-4 px-4 md:mb-6">
+          <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-gray-900">HOW TO DOWNLOAD INSTAGRAM
             PROFILE , VIDEO , STORY ?</h1>
-          <div class="text-[28px] mb-14">Find ways to copy links from various platforms below.</div>
-          <p class="text-[24px] mb-14">The goal is to open the post you need to download and copy the URL.
+          <div class="text-[16px] md:text-[24px] lg:mb-14 md:mb-10 mb-4 lg:text-[28px] lg:font-normal font-medium">Find ways to copy links from various platforms below.</div>
+          <p class="text-[14px] md:text-[24px] mb-5 lg:mb-14 font-normal lg:font-light lg:px-0  px-4">The goal is to open the post you need to download and copy the URL.
             You can do it from the mobile app or in a browser. If you open
             the Instagram app, click on the three dots and choose the
             menu item Copy Link.</p>
-            <img class="m-auto" src="./assets/imgs/Group 296.png" alt="image">
+            <img class="m-auto lg:mb-0 mb-10" src="./assets/imgs/Group 296.png" alt="image">
         </div>
       </div>
-      <div class="w-1/2 rounded-lg overflow-hidden mt-6 sm:mt-0">
-        <img class="object-cover max-w-[600px] ml-auto" src="./assets/imgs/Image 8.png" alt="stats">
+      <div class="lg:w-1/2 rounded-lg overflow-hidden mt-6 sm:mt-0">
+        <img class="object-cover max-w-[600px] w-full lg:ml-auto" src="./assets/imgs/Image 8.png" alt="stats">
       </div>
     </div>
   </section>
 
+
   <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap">
-      <div class="w-1/2 rounded-lg overflow-hidden mt-6 sm:mt-0">
+    <div class="lg:container px-5 py-14 md:py-20 lg:py-24 mx-auto flex flex-wrap items-center justify-between lg:flex-row flex-col">
+      <div class="lg:w-1/2 order-2 lg:order-1">
         <img class="object-cover w-full" src="./assets/imgs/Group 411.png" alt="stats">
       </div>
-      <div class="flex flex-wrap -mx-4 mt-auto mb-auto w-1/2 content-start">
-        <div class="w-full sm:p-4 px-4 mb-6">
-          <h1 class="title-font text-[40px] font-bold mb-14 text-gray-900">Insert the link to the INSTA
+      <div class="flex flex-wrap lg:order-2 -mx-4 mt-auto text-center lg:text-left mb-auto lg:w-1/2 content-start">
+        <div class="w-full sm:p-4 px-4 md:mb-6">
+          <h1 class="title-font text-[24px] md:text-[35px] lg:text-[40px] font-bold lg:mb-14 mb-10 text-gray-900">Insert the link to the INSTA
             Downloader</h1>
-          <p class="text-[24px] mb-14">Simply paste the link into the box of the tool you have chosen to
+          <p class="text-[14px] md:text-[24px] font-normal lg:font-light lg:px-0  px-4">Simply paste the link into the box of the tool you have chosen to
             save the content from. Click download and choose the folder
             on your device to save the content to.</p>
         </div>
@@ -229,239 +235,334 @@
     </div>
   </section>
 
-  
   <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto flex flex-wrap justify-center">
-      <div class="flex flex-wrap -mx-4 mt-auto mb-auto w-1/2 content-start">
-        <div class="w-full sm:p-4 mb-6">
-          <h1 class="title-font text-[40px] font-bold mb-14 text-gray-900">The content is to download</h1>
-          <p class="text-[24px] mb-14">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et</p>
+    <div class="lg:container px-5 py-14 md:py-20 lg:py-24 mx-auto flex flex-wrap items-center justify-between lg:flex-row flex-col">
+      <div class="flex flex-wrap -mx-4 mt-auto text-center lg:text-left mb-auto lg:w-1/2 content-start">
+        <div class="w-full sm:p-4 px-4 md:mb-6">
+          <h1 class="title-font text-[24px] font-bold text-gray-900 md:text-[35px] lg:text-[40px] lg:mb-14 mb-6">The content is to download</h1>
+          <p class="text-[14px] lg:max-w-[680px] md:text-[24px] mb-5 lg:mb-0 font-normal lg:font-light lg:px-0 px-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et</p>
         </div>
       </div>
-      <div class="w-1/2 rounded-lg overflow-hidden mt-6 sm:mt-0">
+      <div class="lg:w-1/2 rounded-lg overflow-hidden mt-6 sm:mt-0">
         <img class="object-cover w-full" src="./assets/imgs/Group 412.png" alt="stats">
       </div>
     </div>
   </section>
 
-  <section class="max-w-[1365px] m-auto text-center mb-48">
-    <h1 class="text-[50px] mb-3">Feature</h1>
-    <p class="text-[20px] mb-8">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+  <section class="max-w-[1365px] m-auto text-center mb-24 px-16 md:px-6">
+    <h1 class="text-[20px] md:text-[30px] lg:text-[50px] font-bold md:font-normal mb-3">Features</h1>
+    <p class="text-[14px] md:text-[20px] mb-4 md:mb-8">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
     <div class="flex justify-center items-center">
 
-      <div class="xl:w-1/3 md:w-1/2 px-4">
-        <div class="bg-gray-100 p-6 py-16 text-center shadow-2xl">
-          <img class="object-contain m-auto mb-16 mt-[140px]" src="./assets/imgs/art1-01.png" alt="content">
-          <h2 class="font-medium text-[30px] text-[#FC4F1E] mb-8">Customer Service</h2>
-          <p class="text-[20px] mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
-        </div>
-      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
 
-      <div class="xl:w-1/3 md:w-1/2 px-4">
-        <div class="bg-gray-100 p-6 py-16 text-center">
-          <img class="object-contain m-auto mb-16 mt-[140px]" src="./assets/imgs/multimedia.png" alt="content">
-          <h2 class="font-medium text-[30px] text-[#FC4F1E] mb-8">Customer Service</h2>
-          <p class="text-[20px] mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
-        </div>
-      </div>
+          <div class="swiper-slide">
+            <div class="bg-gray-100 p-8 md:p-11 lg:p-14 text-center shadow-lg rounded-lg">
+              <img class="object-contain m-auto lg:max-h-[80px] mb-8 md:mb-10 lg:mb-16 mt-[80px] md:mt-[100px] lg:mt-[140px]" src="./assets/imgs/art1-01.png" alt="content">
+              <h2 class="font-medium text-[18px] md:text-[24px] lg:text-[30px] text-[#FC4F1E] mb-6 lg:mb-8">Customer Service</h2>
+              <p class="text-[12px] md:text-[16px] lg:text-[21px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+            </div>
+          </div>
 
-      <div class="xl:w-1/3 md:w-1/2 px-4">
-        <div class="bg-gray-100 p-6 py-16 text-center">
-          <img class="object-contain m-auto mb-16 mt-[140px]" src="./assets/imgs/art1-01.png" alt="content">
-          <h2 class="font-medium text-[30px] text-[#FC4F1E] mb-8">Customer Service</h2>
-          <p class="text-[20px] mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
-        </div>
-      </div>
+          <div class="swiper-slide">
+            <div class="bg-gray-100 p-8 md:p-11 lg:p-14 text-center shadow-lg rounded-lg">
+              <img class="object-contain m-auto lg:max-h-[80px] mb-8 md:mb-10 lg:mb-16 mt-[80px] md:mt-[100px] lg:mt-[140px]" src="./assets/imgs/art1-01.png" alt="content">
+              <h2 class="font-medium text-[18px] md:text-[24px] lg:text-[30px] text-[#FC4F1E] mb-6 lg:mb-8">Customer Service</h2>
+              <p class="text-[12px] md:text-[16px] lg:text-[21px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+            </div>
+          </div>
 
+          <div class="swiper-slide">
+            <div class="bg-gray-100 p-8 md:p-11 lg:p-14 text-center shadow-lg rounded-lg">
+              <img class="object-contain m-auto lg:max-h-[80px] mb-8 md:mb-10 lg:mb-16 mt-[80px] md:mt-[100px] lg:mt-[140px]" src="./assets/imgs/art1-01.png" alt="content">
+              <h2 class="font-medium text-[18px] md:text-[24px] lg:text-[30px] text-[#FC4F1E] mb-6 lg:mb-8">Customer Service</h2>
+              <p class="text-[12px] md:text-[16px] lg:text-[21px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="bg-gray-100 p-8 md:p-11 lg:p-14 text-center shadow-lg rounded-lg">
+              <img class="object-contain m-auto lg:max-h-[80px] mb-8 md:mb-10 lg:mb-16 mt-[80px] md:mt-[100px] lg:mt-[140px]" src="./assets/imgs/art1-01.png" alt="content">
+              <h2 class="font-medium text-[18px] md:text-[24px] lg:text-[30px] text-[#FC4F1E] mb-6 lg:mb-8">Customer Service</h2>
+              <p class="text-[12px] md:text-[16px] lg:text-[21px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="bg-gray-100 p-8 md:p-11 lg:p-14 text-center shadow-lg rounded-lg">
+              <img class="object-contain m-auto lg:max-h-[80px] mb-8 md:mb-10 lg:mb-16 mt-[80px] md:mt-[100px] lg:mt-[140px]" src="./assets/imgs/art1-01.png" alt="content">
+              <h2 class="font-medium text-[18px] md:text-[24px] lg:text-[30px] text-[#FC4F1E] mb-6 lg:mb-8">Customer Service</h2>
+              <p class="text-[12px] md:text-[16px] lg:text-[21px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
     </div>
   </section>
 
-  <section class="max-w-[1365px] m-auto text-center mb-48">
-    <h1 class="text-[50px] mb-3">Your Blogs Title Here</h1>
-    <p class="text-[20px] mb-8">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
-    <div class="flex justify-center items-center">
+  <section class="max-w-[1365px] m-auto text-center mb-14 md:mb-32 lg:mb-40 px-16 md:px-6">
+    <h1 class="text-[20px] md:text-[30px] lg:text-[50px] font-bold md:font-normal mb-3">Your Blogs Title Here</h1>
+    <p class="text-[14px] md:text-[20px] mb-4 md:mb-8">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+  
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
 
-      <div class="xl:w-1/3 md:w-1/2 px-4">
-        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-          <div class="flex-shrink-0">
-            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
-          </div>
-          <div class="flex flex-1 flex-col justify-between bg-white p-6">
-            <div class="flex-1">
-              <p class="text-sm font-medium text-indigo-600">
-                <a href="#" class="hover:underline">Video</a>
-              </p>
-              <a href="#" class="mt-2 block">
-                <p class="text-xl font-semibold text-gray-900">How to use search engine optimization to drive sales</p>
-                <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.</p>
-              </a>
-            </div>
-            <div class="mt-6 flex items-center">
-              <div class="flex-shrink-0">
-                <a href="#">
-                  <span class="sr-only">Brenna Goyette</span>
-                  <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                </a>
+          <div class="swiper-slide">
+            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white">
+              <div class="relative p-3 lg:p-5">
+                <div class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl">
+                  <img class="w-full object-cover rounded-xl md:min-h-[300px]" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
+      
+                  <div class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50">
+                    <div class="flex items-center flex-shrink-0">
+                      <a href="#">
+                        <img class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                      </a>
+                      <span class="inline ml-2 text-[12px] md:text-[16px] font-medium">Brenna Goyette</span>
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-[12px] md:text-[16px] font-medium">
+                        JULY 13, 2022</p>
+                      </div>
+                    </div>
+                </div>
               </div>
-              <div class="ml-3">
-                <p class="text-sm font-medium text-gray-900">
-                  <a href="#" class="hover:underline">Brenna Goyette</a>
-                </p>
-                <div class="flex space-x-1 text-sm text-gray-500">
-                  <time datetime="2020-03-10">Mar 10, 2020</time>
-                  <span aria-hidden="true">&middot;</span>
-                  <span>4 min read</span>
+      
+              <div class="flex flex-1 flex-col justify-between  px-6 pb-8 text-left">
+                <div class="flex-1">
+                  <p class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]">ARTICLE</p>
+                  <p class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900">Instagram Direct Update — Instagram Quick Replies</p>
+                  <p class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+
+                  <a href="#" class="block text-right mt-8 lg:mt-12">
+                    <p class="text-[12px] md:text-[16px] lg:text-[20px] font-medium">Read more
+                      <span class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45 "></span>
+                    </p>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="xl:w-1/3 md:w-1/2 px-4">
-        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-          <div class="flex-shrink-0">
-            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
-          </div>
-          <div class="flex flex-1 flex-col justify-between bg-white p-6">
-            <div class="flex-1">
-              <p class="text-sm font-medium text-indigo-600">
-                <a href="#" class="hover:underline">Video</a>
-              </p>
-              <a href="#" class="mt-2 block">
-                <p class="text-xl font-semibold text-gray-900">How to use search engine optimization to drive sales</p>
-                <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.</p>
-              </a>
-            </div>
-            <div class="mt-6 flex items-center">
-              <div class="flex-shrink-0">
-                <a href="#">
-                  <span class="sr-only">Brenna Goyette</span>
-                  <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                </a>
+          
+          <div class="swiper-slide">
+            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white">
+              <div class="relative p-3 lg:p-5">
+                <div class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl">
+                  <img class="w-full object-cover rounded-xl md:min-h-[300px]" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
+      
+                  <div class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50">
+                    <div class="flex items-center flex-shrink-0">
+                      <a href="#">
+                        <img class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                      </a>
+                      <span class="inline ml-2 text-[12px] md:text-[16px] font-medium">Brenna Goyette</span>
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-[12px] md:text-[16px] font-medium">
+                        JULY 13, 2022</p>
+                      </div>
+                    </div>
+                </div>
               </div>
-              <div class="ml-3">
-                <p class="text-sm font-medium text-gray-900">
-                  <a href="#" class="hover:underline">Brenna Goyette</a>
-                </p>
-                <div class="flex space-x-1 text-sm text-gray-500">
-                  <time datetime="2020-03-10">Mar 10, 2020</time>
-                  <span aria-hidden="true">&middot;</span>
-                  <span>4 min read</span>
+      
+              <div class="flex flex-1 flex-col justify-between  px-6 pb-8 text-left">
+                <div class="flex-1">
+                  <p class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]">ARTICLE</p>
+                  <p class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900">Instagram Direct Update — Instagram Quick Replies</p>
+                  <p class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+
+                  <a href="#" class="block text-right mt-8 lg:mt-12">
+                    <p class="text-[12px] md:text-[16px] lg:text-[20px] font-medium">Read more
+                      <span class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45 "></span>
+                    </p>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="xl:w-1/3 md:w-1/2 px-4">
-        <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-          <div class="flex-shrink-0">
-            <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
-          </div>
-          <div class="flex flex-1 flex-col justify-between bg-white p-6">
-            <div class="flex-1">
-              <p class="text-sm font-medium text-indigo-600">
-                <a href="#" class="hover:underline">Video</a>
-              </p>
-              <a href="#" class="mt-2 block">
-                <p class="text-xl font-semibold text-gray-900">How to use search engine optimization to drive sales</p>
-                <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.</p>
-              </a>
-            </div>
-            <div class="mt-6 flex items-center">
-              <div class="flex-shrink-0">
-                <a href="#">
-                  <span class="sr-only">Brenna Goyette</span>
-                  <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-                </a>
+          <div class="swiper-slide">
+            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white">
+              <div class="relative p-3 lg:p-5">
+                <div class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl">
+                  <img class="w-full object-cover rounded-xl md:min-h-[300px]" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
+      
+                  <div class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50">
+                    <div class="flex items-center flex-shrink-0">
+                      <a href="#">
+                        <img class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                      </a>
+                      <span class="inline ml-2 text-[12px] md:text-[16px] font-medium">Brenna Goyette</span>
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-[12px] md:text-[16px] font-medium">
+                        JULY 13, 2022</p>
+                      </div>
+                    </div>
+                </div>
               </div>
-              <div class="ml-3">
-                <p class="text-sm font-medium text-gray-900">
-                  <a href="#" class="hover:underline">Brenna Goyette</a>
-                </p>
-                <div class="flex space-x-1 text-sm text-gray-500">
-                  <time datetime="2020-03-10">Mar 10, 2020</time>
-                  <span aria-hidden="true">&middot;</span>
-                  <span>4 min read</span>
+      
+              <div class="flex flex-1 flex-col justify-between  px-6 pb-8 text-left">
+                <div class="flex-1">
+                  <p class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]">ARTICLE</p>
+                  <p class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900">Instagram Direct Update — Instagram Quick Replies</p>
+                  <p class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+
+                  <a href="#" class="block text-right mt-8 lg:mt-12">
+                    <p class="text-[12px] md:text-[16px] lg:text-[20px] font-medium">Read more
+                      <span class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45 "></span>
+                    </p>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="swiper-slide">
+            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white">
+              <div class="relative p-3 lg:p-5">
+                <div class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl">
+                  <img class="w-full object-cover rounded-xl md:min-h-[300px]" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
+      
+                  <div class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50">
+                    <div class="flex items-center flex-shrink-0">
+                      <a href="#">
+                        <img class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                      </a>
+                      <span class="inline ml-2 text-[12px] md:text-[16px] font-medium">Brenna Goyette</span>
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-[12px] md:text-[16px] font-medium">
+                        JULY 13, 2022</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+      
+              <div class="flex flex-1 flex-col justify-between  px-6 pb-8 text-left">
+                <div class="flex-1">
+                  <p class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]">ARTICLE</p>
+                  <p class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900">Instagram Direct Update — Instagram Quick Replies</p>
+                  <p class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+
+                  <a href="#" class="block text-right mt-8 lg:mt-12">
+                    <p class="text-[12px] md:text-[16px] lg:text-[20px] font-medium">Read more
+                      <span class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45 "></span>
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg relative bg-white">
+              <div class="relative p-3 lg:p-5">
+                <div class="flex-shrink-0 relative after:absolute after:content after:top-0 after:w-full after:h-full after:left-0 after:right-0 after:bottom-0 after:bg-black after:opacity-60 after:rounded-xl">
+                  <img class="w-full object-cover rounded-xl md:min-h-[300px]" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="">
+      
+                  <div class="flex items-center justify-between text-white w-full absolute bottom-5 left-0 px-4 z-50">
+                    <div class="flex items-center flex-shrink-0">
+                      <a href="#">
+                        <img class="h-[20px] w-[20px] md:h-[32px] md:w-[32px] inline rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                      </a>
+                      <span class="inline ml-2 text-[12px] md:text-[16px] font-medium">Brenna Goyette</span>
+                    </div>
+                    <div class="ml-3">
+                        <p class="text-[12px] md:text-[16px] font-medium">
+                        JULY 13, 2022</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+      
+              <div class="flex flex-1 flex-col justify-between  px-6 pb-8 text-left">
+                <div class="flex-1">
+                  <p class="bg-gray-100 inline text-[#707070] pl-5 pr-2 py-1 rounded-full text-[12px] md:text-[16px]">ARTICLE</p>
+                  <p class="text-[16px] md:text-[20px] lg:text-[24px] xl:text-[29px] mt-4 lg:mt-7 font-medium text-gray-900">Instagram Direct Update — Instagram Quick Replies</p>
+                  <p class="mt-2 lg:mt-4 text-[14px] lg:text-[18px] text-gray-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt</p>
+
+                  <a href="#" class="block text-right mt-8 lg:mt-12">
+                    <p class="text-[12px] md:text-[16px] lg:text-[20px] font-medium">Read more
+                      <span class="ml-1 md:ml-3 border w-0 h-0 p-[3px] md:p-[4px] inline-block border-r-[3px] md:border-r-[4px] md:border-b-[4px] border-b-[3px] border-t-0 border-l-0 border-black -rotate-45 "></span>
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-      </div>
+        <div class="swiper-pagination"></div>
     </div>
   </section>
 
-  <div class="bg-gray-50">
-    <div class="mx-auto max-w-7xl py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
-        <h2 class="text-center text-4xl font-bold  text-gray-900 mb-4">Frequently Asked Questions (FAQs)</h2>
-        <p class="text-center mb-12">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
-        
-        <li class="bg-white my-2 shadow-2xl list-none py-8 rounded-lg">
-          <h2 class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
-          >
-            <span>What shipping options do you have?</span>
-            <svg
-              :class="handleRotate()"
-              class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
-              viewBox="0 0 20 20"
-            >
-              <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
-            </svg>
-          </h2>
-        </li>
-        
-        <li class="bg-white my-2 shadow-2xl list-none py-8 rounded-lg">
-          <h2 class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
-          >
-            <span>What shipping options do you have?</span>
-            <svg
-              :class="handleRotate()"
-              class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
-              viewBox="0 0 20 20"
-            >
-              <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
-            </svg>
-          </h2>
-        </li>
-        
-        <li class="bg-white my-2 shadow-2xl list-none py-8 rounded-lg">
-          <h2 class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
-          >
-            <span>What shipping options do you have?</span>
-            <svg
-              :class="handleRotate()"
-              class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
-              viewBox="0 0 20 20"
-            >
-              <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
-            </svg>
-          </h2>
-        </li>
-        
-        <li class="bg-white my-2 shadow-2xl list-none py-8 rounded-lg">
-          <h2 class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
-          >
-            <span>What shipping options do you have?</span>
-            <svg
-              :class="handleRotate()"
-              class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
-              viewBox="0 0 20 20"
-            >
-              <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
-            </svg>
-          </h2>
-        </li>
-      </div>
-    </div>
-  </div>
+<div class="mx-auto max-w-7xl py-12 px-4 sm:py-16 sm:px-6 lg:px-8 mb-14">
+    <h1 class="title-font mb-4 text-center text-[20px] font-bold text-gray-900 md:text-[35px] lg:text-[50px]">Frequently Asked Questions (FAQs)</h1>
 
-  <footer class="p-4 pt-[90px] bg-white dark:bg-gray-800">
-    <div class="mx-auto max-w-screen-2xl">
+    <p class="text-center text-[14px] lg:text-[20px] lg:mb-12 mb-8 max-w-[300px] md:max-w-full mx-auto">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+
+    <li class="bg-white my-2 shadow-lg list-none rounded-xl p-4 lg:p-8 md:p-6 cursor-pointer mb-7 faqLi">
+      <div class="flex justify-between items-center mb-3">
+        <h1 class="text-[20px] lg:text-[30px] font-bold">Lorem ipsum dolor</h1>
+        <span class="ml-3 border w-0 h-0 p-[4px] block border-r-[4px] border-b-[4px] border-t-0 border-l-0 border-black rotate-45 "></span>
+      </div>
+
+      <div class="text-[14px] lg:text-[18px] faqs-message hidden">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorum tenetur enim. Numquam cumque itaque exercitationem nobis quod expedita, saepe minus suscipit cupiditate debitis magni quo ab provident odio aspernatur.
+      </div>
+    </li>
+
+
+    <li class="bg-white my-2 shadow-lg list-none rounded-xl p-4 lg:p-8 md:p-6 cursor-pointer mb-7 faqLi">
+      <div class="flex justify-between items-center mb-3">
+        <h1 class="text-[20px] lg:text-[30px] font-bold">Lorem ipsum dolor</h1>
+        <span class="ml-3 border w-0 h-0 p-[4px] block border-r-[4px] border-b-[4px] border-t-0 border-l-0 border-black rotate-45 "></span>
+      </div>
+
+      <div class="text-[14px] lg:text-[18px] faqs-message hidden">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorum tenetur enim. Numquam cumque itaque exercitationem nobis quod expedita, saepe minus suscipit cupiditate debitis magni quo ab provident odio aspernatur.
+      </div>
+    </li>
+
+    <li class="bg-white my-2 shadow-lg list-none rounded-xl p-4 lg:p-8 md:p-6 cursor-pointer mb-7 faqLi">
+      <div class="flex justify-between items-center mb-3">
+        <h1 class="text-[20px] lg:text-[30px] font-bold">Lorem ipsum dolor</h1>
+        <span class="ml-3 border w-0 h-0 p-[4px] block border-r-[4px] border-b-[4px] border-t-0 border-l-0 border-black rotate-45 "></span>
+      </div>
+
+      <div class="text-[14px] lg:text-[18px] faqs-message hidden">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorum tenetur enim. Numquam cumque itaque exercitationem nobis quod expedita, saepe minus suscipit cupiditate debitis magni quo ab provident odio aspernatur.
+      </div>
+    </li>
+
+    <li class="bg-white my-2 shadow-lg list-none rounded-xl p-4 lg:p-8 md:p-6 cursor-pointer mb-7 faqLi">
+      <div class="flex justify-between items-center mb-3">
+        <h1 class="text-[20px] lg:text-[30px] font-bold">Lorem ipsum dolor</h1>
+        <span class="ml-3 border w-0 h-0 p-[4px] block border-r-[4px] border-b-[4px] border-t-0 border-l-0 border-black rotate-45 "></span>
+      </div>
+
+      <div class="text-[14px] lg:text-[18px] faqs-message hidden">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorum tenetur enim. Numquam cumque itaque exercitationem nobis quod expedita, saepe minus suscipit cupiditate debitis magni quo ab provident odio aspernatur.
+      </div>
+    </li>
+    <li class="bg-white my-2 shadow-lg list-none rounded-xl p-4 lg:p-8 md:p-6 cursor-pointer mb-7 faqLi">
+      <div class="flex justify-between items-center mb-3">
+        <h1 class="text-[20px] lg:text-[30px] font-bold">Lorem ipsum dolor</h1>
+        <span class="ml-3 border w-0 h-0 p-[4px] block border-r-[4px] border-b-[4px] border-t-0 border-l-0 border-black rotate-45 "></span>
+      </div>
+
+      <div class="text-[14px] lg:text-[18px] faqs-message hidden">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorum tenetur enim. Numquam cumque itaque exercitationem nobis quod expedita, saepe minus suscipit cupiditate debitis magni quo ab provident odio aspernatur.
+      </div>
+    </li>
+</div>
+
+  <footer class="p-7 lg:pt-[90px] md:pt-[60px] pt-[28px] bg-white dark:bg-gray-800">
+    <div class="mx-auto max-w-[1600px]">
         <div class="md:flex md:justify-between">
-            <div class="mb-6 md:mb-0 max-w-[500px]">
+            <div class="mb-6 md:mb-0 max-w-[500px] md:block hidden">
                 <a href="#" class="flex items-center mb-8">
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">INSTAGRAM LOGO </span>
                 </a>
@@ -474,7 +575,8 @@
                   </span>
                 </a>
             </div>
-            <div class="grid grid-cols-1 gap-8 sm:gap-8 sm:grid-cols-3">
+
+            <div class="grid gap-12 md:grid-cols-3 grid-cols-1 text-center md:text-left mb-8 md:mb-0">
                 <div>
                     <h2 class="mb-6 text-md font-bold text-gray-900 uppercase dark:text-white ">Tools</h2>
                     <ul class="text-gray-600 dark:text-gray-400 text-[20px]">
@@ -482,7 +584,7 @@
                             <a href="./404page.html" class="hover:underline">404</a>
                         </li>
                         <li class="mb-2">
-                            <a href="./blog.html" class="hover:underline">Search Page</a>
+                            <a href="./blog.html" class="hover:underline">Search</a>
                         </li>
                         <li>
                             <a href="#" class="hover:underline">Reels</a>
@@ -505,43 +607,62 @@
                 </div>
                 <div>
                   <h2 class="mb-6 text-md font-bold text-gray-900 uppercase dark:text-white ">Legal</h2>
-                  <ul class="text-gray-600 dark:text-gray-400 text-[20px]">
-                    <li class="mb-2 ">
-                        <a href="#" class="hover:underline">Profile</a>
-                    </li>
-                    <li class="mb-2">
-                        <a href="#" class="hover:underline">Story</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">Reels</a>
-                    </li>
-                </ul>
+                    <ul class="text-gray-600 dark:text-gray-400">
+                      <li class="mb-2 text-[20px]">
+                        <a href="#" class="hover:underline">ABOUT US</a>
+                      </li>
+                      <li class="mb-2 text-[20px]">
+                        <a href="#" class="hover:underline">Private Policy</a>
+                      </li>
+                      <li class="text-[20px]">
+                        <a href="#" class="hover:underline">Terms & Condition</a>
+                      </li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="flex justify-center items-center">
-            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-                <a href="#" class="text-[#FC4F1E] dark:hover:text-white border border-[#FC4F1E] rounded-full p-1">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
-                </a>
+            <div class="flex mt-4 space-x-12 sm:justify-center sm:mt-0">
                 <a href="#" class="text-[#FC4F1E] dark:hover:text-white border border-[#FC4F1E] rounded-full p-1">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
                 </a>
+
                 <a href="#" class="text-[#FC4F1E] dark:hover:text-white border border-[#FC4F1E] rounded-full p-1">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
                 </a>
+
+                <a href="#" class="text-[#FC4F1E] dark:hover:text-white border border-[#FC4F1E] rounded-full p-1">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+              </a>
             </div>
+        </div>
+
+        <div class="mt-8 md:hidden text-center">
+          <h3 class="font-medium text-[16px] mb-2">NEED ANY HELP?</h1>
+            <div class="relative mb-8 w-full">
+              <input type="search" id="search" class="w-full outline-none bg-gray-200 py-2 px-7 rounded-full text-[12px]" value="instadownloader@mail.com">
+              <button class="text-[12px] absolute z-10 right-0 top-0 bg-[#FC4F1E] inline-block text-white py-2 px-8 rounded-full ">SEND</button>
+            </div>
+
+            <div class="text-[17px] font-medium mb-3">INSTAGRAM LOGO</div>
+            <p class="text-[14px]">Copyright 2018</p>
+
         </div>
     </div>
 </footer>
 
 <div class="relative bg-[#303030]">
-  <div class="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
-      <p class="font-medium text-white text-center">
-        all instagram tm logos and trademarks displayed on this application are property of instagram. Copyright 2018  downloader.co
+  <div class="mx-auto py-4 px-3 sm:px-6 lg:px-8">
+      <p class="text-[16px] lg:text-[21px] text-white text-center md:block hidden">
+        all instagram tm logos and trademarks displayed on this application are property of instagram.
+        <span class="ml-2">
+          © Copyright 2018  downloader.co
+        </span>
       </p>
   </div>
 </div>
 
+<script defer src="./assets/script/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
